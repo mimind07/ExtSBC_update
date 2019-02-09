@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuFragment">
+
+
+
+    <LinearLayout
+        android:layout_gravity="clip_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--Toolbar-->
+        <android.support.v7.widget.Toolbar
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:id="@+id/toolbarMenu"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary" />
+
+
+        <ImageView
+            android:src="@drawable/menu"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:id="@+id/btnOne"
+                android:layout_marginRight="20dp"
+                android:text="@string/message"
+                android:layout_width="@dimen/my_btn"
+                android:layout_height="@dimen/my_btn"
+                android:layout_weight="4" />
+            <Button
+                android:id="@+id/btnTwo"
+                android:text="@string/message"
+                android:layout_width="@dimen/my_btn"
+                android:layout_height="@dimen/my_btn"
+                android:layout_weight="4" />
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btnThree"
+                android:layout_marginRight="20dp"
+                android:text="@string/event"
+                android:layout_width="@dimen/my_btn"
+                android:layout_height="@dimen/my_btn"
+                android:layout_weight="4" />
+
+
+            <Button
+                android:id="@+id/btnFour"
+                android:text="@string/investigate"
+                android:layout_width="@dimen/my_btn"
+                android:layout_height="@dimen/my_btn"
+                android:layout_weight="4"/>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

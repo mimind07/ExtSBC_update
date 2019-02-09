@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment">
+
+    <!--Content-->
+ <LinearLayout
+     android:layout_margin="30dp"
+     android:orientation="vertical"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+     <!--logo-->
+     <ImageView
+         android:src="@drawable/logo0"
+         android:layout_gravity="center_horizontal"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+     <!--email-->
+     <EditText
+         android:id="@+id/edtEmail"
+         android:inputType="textEmailAddress"
+         android:hint="Email:"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" />
+
+     <!--Password-->
+     <EditText
+         android:id="@+id/edtPassword"
+         android:inputType="textPassword"
+         android:hint="Password:"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" />
+     <!--login-->
+    <Button
+        android:id="@+id/btnlogin"
+    android:text="Login"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+     <!--New Register-->
+     <TextView
+         android:id="@+id/textRegister"
+         android:clickable="true"
+         android:textColor="@color/colorAccent"
+         android:layout_marginTop="10dp"
+         android:layout_gravity="center_horizontal"
+         android:text="New Register"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+ </LinearLayout>
+
+
+
+
+</FrameLayout>

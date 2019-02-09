@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--Toolbar-->
+        <android.support.v7.widget.Toolbar
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:id="@+id/toolbarRegister"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary" />
+
+
+        <!--Content-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:paddingBottom="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="30dp"
+                android:orientation="vertical">
+
+                <!--id-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <!--Title-->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/std_id"
+                        android:textSize="@dimen/h3"
+                        android:textStyle="bold" />
+
+
+                    <!--TextField-->
+                    <EditText
+                        android:id="@+id/edtID1"
+                        android:inputType="number"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:hint="xxx 12 digi xxx" />
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <!--Title-->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/password"
+                        android:textSize="@dimen/h3"
+                        android:textStyle="bold" />
+
+
+                    <!--TextField-->
+                    <EditText
+                        android:id="@+id/edtPassword1"
+                        android:inputType="textPassword"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                         />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <!--Title-->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Re-Password"
+                        android:textSize="@dimen/h3"
+                        android:textStyle="bold" />
+
+
+                    <!--TextField-->
+                    <EditText
+                        android:id="@+id/edtPassword2"
+                        android:inputType="textPassword"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                         />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <!--Title-->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/firstname"
+                        android:textSize="@dimen/h3"
+                        android:textStyle="bold" />
+
+
+                    <!--TextField-->
+                    <EditText
+                        android:id="@+id/edtName"
+                        android:inputType="text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                         />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <!--Title-->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/lastname"
+                        android:textSize="@dimen/h3"
+                        android:textStyle="bold" />
+
+
+                    <!--TextField-->
+                    <EditText
+                        android:id="@+id/edtSurname"
+                        android:inputType="text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                         />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <!--Title-->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/age"
+                        android:textSize="@dimen/h3"
+                        android:textStyle="bold" />
+
+
+                    <!--TextField-->
+                    <EditText
+                        android:id="@+id/edtAge"
+                        android:inputType="number"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                         />
+
+
+                </LinearLayout>
+
+
+                <!--Gender-->
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/sex"
+                        android:textSize="@dimen/h3"
+                        android:textStyle="bold" />
+
+
+                    <RadioGroup
+                        android:id="@+id/radGender"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radMail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/male" />
+                        <RadioButton
+                            android:id="@+id/radFemail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/female" />
+
+                    </RadioGroup>
+
+
+
+
+                </LinearLayout>
+
+
+
+                <!--Date Birth-->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                <!--Title-->
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Date Birth"
+                    android:textSize="@dimen/h3"
+                    android:textStyle="bold" />
+
+                    <TextView
+                    android:id="@+id/txtDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="dd-mm-yyyy"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btnSet"
+                        android:text="Set"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+                <!--address-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <!--Title-->
+                    <TextView
+                        android:layout_gravity="start"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/address"
+                        android:textSize="@dimen/h3"
+                        android:textStyle="bold" />
+
+
+                    <!--TextField-->
+                    <EditText
+                        android:id="@+id/edtAddress"
+                        android:inputType="text"
+                        android:layout_gravity="top"
+                        android:lines="4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                         />
+
+
+                </LinearLayout>
+
+                <!--Spinner-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <!--Title-->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/cl"
+                        android:textSize="@dimen/h3"
+                        android:textStyle="bold" />
+
+
+                    <!--TextField-->
+                    <Spinner
+                        android:id="@+id/spnLevel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2" />
+
+
+                </LinearLayout><LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <!--Title-->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/faculty"
+                        android:textSize="@dimen/h3"
+                        android:textStyle="bold" />
+
+
+                    <!--TextField-->
+                    <Spinner
+                        android:id="@+id/spnDivition"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <!--Title-->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/branch"
+                        android:textSize="@dimen/h3"
+                        android:textStyle="bold" />
+
+
+                    <!--TextField-->
+                    <Spinner
+                        android:id="@+id/spnGroup"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <!--Title-->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Email"
+                        android:textSize="@dimen/h3"
+                        android:textStyle="bold" />
+
+
+                    <!--TextField-->
+                    <EditText
+                        android:id="@+id/edtEmail"
+                        android:inputType="textEmailAddress"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <!--Title-->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/tel"
+                        android:textSize="@dimen/h3"
+                        android:textStyle="bold" />
+
+
+                    <!--TextField-->
+                    <EditText
+                        android:id="@+id/edtPhone"
+                        android:inputType="number"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        />
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>
