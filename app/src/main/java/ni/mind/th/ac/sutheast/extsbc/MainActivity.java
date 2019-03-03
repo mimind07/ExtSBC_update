@@ -1,7 +1,11 @@
 package ni.mind.th.ac.sutheast.extsbc;
 
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -9,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
 //        Add Fradment to actvity
         if (savedInstanceState == null) {
@@ -18,6 +23,13 @@ public class MainActivity extends AppCompatActivity {
                     .add(R.id.contentMainFragment, new MainFragment())
                     .commit();
         }
+        /*if (savedInstanceState == null) {
+
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .add(R.id.contentMainFragment, new CalenderFragment())
+                    .commit();
+        }*/
 
 
     }   //Main Method

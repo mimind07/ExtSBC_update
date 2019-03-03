@@ -27,6 +27,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
+
         oneButton = getView().findViewById(R.id.btnOne);
         twoButton = getView().findViewById(R.id.btnTwo);
         threeButton = getView().findViewById(R.id.btnThree);
@@ -36,7 +37,6 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         twoButton.setOnClickListener(this);
         threeButton.setOnClickListener(this);
         fourButton.setOnClickListener(this);
-
 
     }
 
@@ -55,6 +55,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                 getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.contentServiceFragment, new ListEventFragment()).addToBackStack(null).commit();
                 break;
             case R.id.btnTwo:
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.contentServiceFragment, new CalenderFragment()).addToBackStack(null).commit();
                 break;
             case R.id.btnThree:
                 Intent intent = new Intent(getActivity(), QRActivity.class);
@@ -62,9 +63,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                 startActivity(intent);
                 break;
             case R.id.btnFour:
-                Intent intent1 = new Intent(getActivity(), QRActivity.class);
-                intent1.putExtra("MyKey", false);
-                startActivity(intent1);
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.contentServiceFragment, new CheckeventFragment()).addToBackStack(null).commit();
                 break;
         }
 

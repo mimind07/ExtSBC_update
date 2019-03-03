@@ -27,10 +27,50 @@
     <string name="register">ลงทะเบียน</string>
     <string name="title_have_space">มีช่องว่าง</string>
     <string name="message_have_space">กรุณากรอกให้ครบทุกช่อง</string>
-    <string name="title_non13">ระหััสนักศึกษาผิด</string>
-    <string name="message_non13">ระหัสนักษักษามี 13 หลักคะ</string>
-    <string name="title_nonMatch">Pass ผิด</string>
-    <string name="message_noMatch">Password ไม่เหมือนกัน คะ</string>
+    <string name="title_non13">รหัสนักศึกษาไม่ครบ</string>
+    <string name="message_non13">รหัสนักศึกษามี 13 หลักค่ะ</string>
+    <string name="title_nonMatch">Password ผิด</string>
+    <string name="message_noMatch">Password ไม่เหมือนกัน ค่ะ</string>
     <string name="password">Password</string>
+    <string name="menu_in">ประกาศข่าวสาร</string>
+
+
+    <!--Calender-->
+    <string name="detail">ชื่อโครงการ/กิจกรรม 2562</string>
+    <string name="date">วันที่</string>
+    <string name="d1">18-22 มี.ค.62</string>
+    <string name="e1">โครงการพัฒนาศักยภาพด้านเครือข่ายคอมพิวเตอร์</string>
+    <string name="d2">27-28 เม.ย.62</string>
+    <string name="e2">โครงการวิธีธรรม วิถีไทย ใส่ใจวิถีพุธ บวชชีพราหมณ์ ถวายพระราชกุศล</string>
+    <string name="d3">6 พ.ค.62</string>
+    <string name="e3">โครงการกีฬาสัมพันธ์ SBC GAME 2018(ภาคสมทบ)วิทยาเขตบางนา</string>
+    <string name="d4">26 พ.ค.62</string>
+    <string name="e4">โครงการปัจฉิมนิเทศนักศึกษา(ภาคสมทบ) วิทยาเขตบางนา</string>
+    <string name="d5">4-6 มิ.ย.62</string>
+    <string name="e5">โครงการสัมนาผู้นำนักศึกษา</string>
+    <string name="d6">13 มิ.ย.62</string>
+    <string name="e6">โครงการปฐมนิเทศนักศึกษาใหม่ ปีการศึกษา2562</string>
+    <string name="d7">28มิ.ย.62</string>
+    <string name="e7">โครงการพิธีไหว้ครู(ภาคปกติ)</string>
+    <string name="d8">2 ก.ค.62</string>
+    <string name="e8">โครงการเปิดโลกชมรม</string>
+    <string name="d9">20 ก.ค.62</string>
+    <string name="e9">โครงการอบรมนักพูดสู่นักปฏิบัติมืออาชีพ</string>
+    <string name="d10">5 ส.ค.62</string>
+    <string name="e10">โครงการโครงการ FutsalCup กีฬาต้านยาเสพติด ครั้งที่ 4</string>
+    <string name="d11">5 ส.ค.62</string>
+    <string name="e11">โครงการไหว้ครู (ภาคสมทบ ค่ำ(เสาร์-อาทิตย์)</string>
+    <string name="d12">10 ส.ค.62</string>
+    <string name="e12">โครงการฝึกทักษะการใช้คอมพิวเตอร์ชั้นสูง</string>
+    <string name="d13">28 ส.ค.62</string>
+    <string name="e13">โครงการส่งเสริมคุณธรรม จริยธรรม ธรรมหรรษา</string>
+    <string name="d14">13 ก.ย.62</string>
+    <string name="e14">โครงการส่งเสริมเศรษฐกิจพอเพียง "ตามรอยพ่อรู้เพียงพอ"</string>
+    <string name="d15">24-26 ต.ค.62</string>
+    <string name="e15">โครงการค่ายอาสาพัฒนาชุมชน</string>
+
+
+
+
 
 </resources>

@@ -44,7 +44,7 @@
                 android:layout_weight="4" />
             <Button
                 android:id="@+id/btnTwo"
-                android:text="@string/message"
+                android:text="@string/calendar"
                 android:layout_width="@dimen/my_btn"
                 android:layout_height="@dimen/my_btn"
                 android:layout_weight="4" />

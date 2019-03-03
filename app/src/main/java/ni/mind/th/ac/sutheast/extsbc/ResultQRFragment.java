@@ -1,6 +1,5 @@
 package ni.mind.th.ac.sutheast.extsbc;
 
-
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -9,6 +8,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -26,6 +26,7 @@ public class ResultQRFragment extends Fragment {
 
     private String qrString, uidString, Check, Detail, EndDate, Member, Place, RunTime, StartDate, name;
     private boolean statusABoolean;
+    Button Submit;
 
 
     public ResultQRFragment() {
@@ -44,6 +45,9 @@ public class ResultQRFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+
+        //Submit Controller
+        SubmitController();
 
         qrString = getArguments().getString("QR");
         statusABoolean = getArguments().getBoolean("Status");
@@ -111,5 +115,13 @@ public class ResultQRFragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_result_qr, container, false);
     }
-
+    private void SubmitController() {
+        Button button = getView().findViewById(R.id.btnsubmit);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.contentQRfragment, new CheckeventFragment()).addToBackStack(null).commit();
+            }
+        });
+    }
 }

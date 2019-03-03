@@ -5,20 +5,20 @@ import android.os.Parcelable;
 
 public class DataModel implements Parcelable {
 
-    private String address, age, dateBirth, divistion, gender,
+    private String address, age, dateBirth, divisition, gender,
             idStudent, level, name, phone, section, surname;
 
     public DataModel() {
     }
 
     public DataModel(String address, String age, String dateBirth,
-                     String divistion, String gender, String idStudent,
+                     String divisition, String gender, String idStudent,
                      String level, String name, String phone,
                      String section, String surname) {
         this.address = address;
         this.age = age;
         this.dateBirth = dateBirth;
-        this.divistion = divistion;
+        this.divisition = divisition;
         this.gender = gender;
         this.idStudent = idStudent;
         this.level = level;
@@ -32,7 +32,7 @@ public class DataModel implements Parcelable {
         address = in.readString();
         age = in.readString();
         dateBirth = in.readString();
-        divistion = in.readString();
+        divisition = in.readString();
         gender = in.readString();
         idStudent = in.readString();
         level = in.readString();
@@ -79,11 +79,11 @@ public class DataModel implements Parcelable {
     }
 
     public String getDivistion() {
-        return divistion;
+        return divisition;
     }
 
-    public void setDivistion(String divistion) {
-        this.divistion = divistion;
+    public void setDivistion(String divisition) {
+        this.divisition = divisition;
     }
 
     public String getGender() {
@@ -152,7 +152,7 @@ public class DataModel implements Parcelable {
         dest.writeString(address);
         dest.writeString(age);
         dest.writeString(dateBirth);
-        dest.writeString(divistion);
+        dest.writeString(divisition);
         dest.writeString(gender);
         dest.writeString(idStudent);
         dest.writeString(level);

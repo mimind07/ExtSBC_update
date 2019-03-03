@@ -56,8 +56,8 @@ public class RegisterFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-//        Create Toolber
-        createToolber();
+//        Create Toolbar
+        createToolbar();
 
 //        Level Controller
         levelController();
@@ -106,7 +106,7 @@ public class RegisterFragment extends Fragment {
     }
 
     private void createSection() {
-        final String[] strings = new String[]{"Section1", "Section2", "Section3", "Section่4",};
+        final String[] strings = new String[]{"---------------------------","สาขาวิชาการบัญชี", "สาขาวิชาการตลาด", "สาขาวิชาการจัดการ", "สาขาการจัดการการท่องเที่ยวและการโรงแรม","สาขานิติศาสตรบัณฑิต","สาขาวิชาการจัดการโลจิสติกส์","สาขาวิชาภาษาอังกฤษธุรกิจ","สาขาวิชาเทคโนโลยีสารสนเทศ","สาขาวิชาคอมพิวเตอร์ธุรกิจ","สาขาวิชาเทคโนโลยีการจัดการอุตสาหกรรม","สาขาวิชาเทคโนโลยีคอมพิวเตอร์","สาขาวิชาเทคโนโลยีมัลติมีเดียและแอนิเมชัน"};
         Spinner spinner = getView().findViewById(R.id.spnGroup);
         ArrayAdapter<String> stringArrayAdapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1, strings);
         spinner.setAdapter(stringArrayAdapter);
@@ -164,7 +164,7 @@ public class RegisterFragment extends Fragment {
 
     private void createDivision() {
 
-        final String[] strings = new String[]{"Division1", "Division2", "Division3", "Division4",};
+        final String[] strings = new String[]{"---------------------------","คณะบัญชีและวิทยาการจัดการ", "คณะนิติศาสตร์", "คณะโลจิสติกส์และเทคโนโลยีการบิน", "คณะศิลปศาสตร์","คณะวิทยาศาสตร์และเทคโนโลยี"};
         Spinner spinner = getView().findViewById(R.id.spnDivition);
         ArrayAdapter<String> stringArrayAdapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1, strings);
         spinner.setAdapter(stringArrayAdapter);
@@ -184,10 +184,10 @@ public class RegisterFragment extends Fragment {
 
     }
 
-    private void createToolber() {
+    private void createToolbar() {
         Toolbar toolbar = getView().findViewById(R.id.toolbarRegister);
         ((MainActivity) getActivity()).setSupportActionBar(toolbar);
-        ((MainActivity) getActivity()).getSupportActionBar().setTitle(getString(R.string.register));
+        ((MainActivity) getActivity()).getSupportActionBar().setTitle( getString(R.string.register));
         ((MainActivity) getActivity()).getSupportActionBar().setSubtitle(getString(R.string.message_have_space));
         ((MainActivity) getActivity()).getSupportActionBar().setHomeButtonEnabled(true);
         ((MainActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -243,9 +243,9 @@ public class RegisterFragment extends Fragment {
 //                    Password non Match
                 showAlert(getString(R.string.title_nonMatch), getString(R.string.message_noMatch));
             } else if (genderABoolean) {
-                showAlert("Choose Gender ?", "Please Choose Gender Male or Female");
+                showAlert("คุณยังไม่ได้เลือดเพศ", "กรุณาเลือกเพศของคุณ");
             } else if (dateBirthABoolean) {
-                showAlert("No Choose Date Birth", "Please Click SET on Date Birth");
+                showAlert("คุณยังไม่ได้ใส่วันเดือนปีเกิด", "โปรดใส่วันเดือนปีเกิด");
             } else {
                 AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(getActivity());
                 alertDialogBuilder.setTitle("Confirm Data").setMessage("id = " + id1 + "\n" +
