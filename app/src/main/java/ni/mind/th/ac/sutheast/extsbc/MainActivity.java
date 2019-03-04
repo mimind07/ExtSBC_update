@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-//        Add Fradment to actvity
+//        Add Fragment to activity
         if (savedInstanceState == null) {
 
             getSupportFragmentManager()
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
             getSupportFragmentManager()
                     .beginTransaction()
-                    .add(R.id.contentMainFragment, new CalenderFragment())
+                    .add(R.id.contentCalenderFragment, new CalenderFragment())
                     .commit();
         }*/
 
