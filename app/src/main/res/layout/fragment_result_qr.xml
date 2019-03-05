@@ -8,60 +8,91 @@
 
     <!-- TODO: Update blank fragment layout -->
 
+    <!--Toolbar-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarCalender"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_gravity="center"
+        android:gravity="center"/>
     <TextView
         android:id="@+id/txtCheck"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Result QR" />
+        android:text="Result QR"
+        android:layout_gravity="center"
+        android:gravity="center"/>
 
     <TextView
         android:id="@+id/txtDetail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Result QR" />
+        android:text="Result QR"
+        android:layout_gravity="center"
+        android:gravity="center"/>
 
     <TextView
         android:id="@+id/txtEndDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Result QR" />
+        android:text="Result QR"
+        android:layout_gravity="center"
+        android:gravity="center"/>
 
     <TextView
         android:id="@+id/txtMember"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Result QR" />
+        android:text="Result QR"
+        android:layout_gravity="center"
+        android:gravity="center"/>
 
     <TextView
         android:id="@+id/txtPlace"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Result QR" />
+        android:text="Result QR"
+        android:layout_gravity="center"
+        android:gravity="center"/>
 
     <TextView
         android:id="@+id/txtRunTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Result QR" />
+        android:text="Result QR"
+        android:layout_gravity="center"
+        android:gravity="center"/>
 
     <TextView
         android:id="@+id/txtStartDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Result QR" />
+        android:text="Result QR"
+        android:layout_gravity="center"
+        android:gravity="center"/>
 
     <TextView
         android:id="@+id/txtName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Result QR" />
+        android:text="Result QR"
+        android:layout_gravity="center"
+        android:gravity="center"/>
 
     <Button
         android:id="@+id/btnsubmit"
-        android:text="Submit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:text="@string/ci"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"/>
 
 
 </LinearLayout>

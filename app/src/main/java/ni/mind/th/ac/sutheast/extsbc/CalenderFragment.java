@@ -39,10 +39,13 @@ public class CalenderFragment extends Fragment {
 
     }
 
-
     /*@Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+        createToolbar();
+    }
+
+    public void createToolbar() {
 
         Toolbar toolbar = getView().findViewById(R.id.toolbarCalender);
         ((MainActivity) getActivity()).setSupportActionBar(toolbar);
@@ -52,7 +55,7 @@ public class CalenderFragment extends Fragment {
 
         //Add Navigation
         toolbar.setNavigationIcon(R.mipmap.ic_back);
-        toolbar.setNavigationOnClickListener(new View.OnClickListener(){
+        /*toolbar.setNavigationOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
                 Log.d("14AugV1","Click Bar");

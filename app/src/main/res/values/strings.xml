@@ -33,6 +33,7 @@
     <string name="message_noMatch">Password ไม่เหมือนกัน ค่ะ</string>
     <string name="password">Password</string>
     <string name="menu_in">ประกาศข่าวสาร</string>
+    <string name="ci">ยืนยันการลงทะเบียน</string>
 
 
     <!--Calender-->
