@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -28,6 +29,15 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         super.onActivityCreated(savedInstanceState);
 
 
+        initialAndGetEvent();
+
+//        Create Toolbar
+        Toolbar toolbar = getView().findViewById(R.id.toolbarMenu);
+        ((ServiceActivity)getActivity()).setSupportActionBar(toolbar);
+
+    }   // Main Method
+
+    private void initialAndGetEvent() {
         oneButton = getView().findViewById(R.id.btnOne);
         twoButton = getView().findViewById(R.id.btnTwo);
         threeButton = getView().findViewById(R.id.btnThree);
@@ -37,7 +47,6 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         twoButton.setOnClickListener(this);
         threeButton.setOnClickListener(this);
         fourButton.setOnClickListener(this);
-
     }
 
     @Override

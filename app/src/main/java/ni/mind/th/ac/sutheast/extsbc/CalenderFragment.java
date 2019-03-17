@@ -22,15 +22,31 @@ public class CalenderFragment extends Fragment {
         // Required empty public constructor
     }
 
-    /*@Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        getActivity().setContentView(R.layout.fragment_calender);
-        if (savedInstanceState == null) {
 
-            getActivity().getSupportFragmentManager().beginTransaction().add(R.id.contentCalenderFragment, new CalenderFragment()).commit();
-        }
-    }*/
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+
+//        Create Toolbar
+        createToolbar();
+
+
+    }
+
+    private void createToolbar() {
+        Toolbar toolbar = getView().findViewById(R.id.toolbarCalender);
+        ((ServiceActivity)getActivity()).setSupportActionBar(toolbar);
+        ((ServiceActivity) getActivity()).getSupportActionBar().setTitle(getString(R.string.calendar));
+        ((ServiceActivity) getActivity()).getSupportActionBar().setHomeButtonEnabled(true);
+        ((ServiceActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getActivity().getSupportFragmentManager().popBackStack();
+            }
+        });
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
@@ -39,29 +55,6 @@ public class CalenderFragment extends Fragment {
 
     }
 
-    /*@Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        createToolbar();
-    }
-
-    public void createToolbar() {
-
-        Toolbar toolbar = getView().findViewById(R.id.toolbarCalender);
-        ((MainActivity) getActivity()).setSupportActionBar(toolbar);
-
-        //Add Title
-        ((MainActivity) getActivity()).getSupportActionBar().setTitle(getString(R.string.calendar));
-
-        //Add Navigation
-        toolbar.setNavigationIcon(R.mipmap.ic_back);
-        /*toolbar.setNavigationOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                Log.d("14AugV1","Click Bar");
-            }
-        });
-    }*/
 
 
 }
