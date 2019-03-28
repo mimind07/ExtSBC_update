@@ -72,7 +72,10 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                 startActivity(intent);
                 break;
             case R.id.btnFour:
-                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.contentServiceFragment, new CheckeventFragment()).addToBackStack(null).commit();
+                Intent intent2 = new Intent(getActivity(), QRActivity.class);
+                intent2.putExtra("MyKey", false);
+                startActivity(intent2);
+//                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.contentServiceFragment, new CheckeventFragment()).addToBackStack(null).commit();
                 break;
         }
 
