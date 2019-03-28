@@ -71,7 +71,11 @@ public class QrFragment extends Fragment implements ZXingScannerView.ResultHandl
 
             } else {
 
-                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.contentServiceFragment, new CheckeventFragment()).addToBackStack(null).commit();
+                Log.d("29MarV1", "Status false");
+                getActivity()
+                        .getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.contentQRfragment, new CheckeventFragment()).addToBackStack(null).commit();
 
             }
 
