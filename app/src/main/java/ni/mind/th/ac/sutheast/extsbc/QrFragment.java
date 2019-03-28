@@ -14,7 +14,7 @@ import com.google.zxing.Result;
 
 import me.dm7.barcodescanner.zxing.ZXingScannerView;
 
-public class QrFragment extends Fragment implements ZXingScannerView.ResultHandler{
+public class QrFragment extends Fragment implements ZXingScannerView.ResultHandler {
 
     private ZXingScannerView zXingScannerView;
     private String qrString;
@@ -37,7 +37,6 @@ public class QrFragment extends Fragment implements ZXingScannerView.ResultHandl
         zXingScannerView = new ZXingScannerView(getActivity());
         return zXingScannerView;
     }
-
 
 
     @Override
@@ -63,10 +62,19 @@ public class QrFragment extends Fragment implements ZXingScannerView.ResultHandl
 
             statusABoolean = getArguments().getBoolean("Status");
 
-            getActivity().getSupportFragmentManager()
-                    .beginTransaction()
-                    .replace(R.id.contentQRfragment, ResultQRFragment.resultQRInstance(statusABoolean, qrString))
-                    .commit();
+            if (statusABoolean) {
+
+                getActivity().getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.contentQRfragment, ResultQRFragment.resultQRInstance(statusABoolean, qrString))
+                        .commit();
+
+            } else {
+
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.contentServiceFragment, new CheckeventFragment()).addToBackStack(null).commit();
+
+            }
+
 
         }
 //        qrString ว่างเปล่า
