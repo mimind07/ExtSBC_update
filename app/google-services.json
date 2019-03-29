@@ -39,6 +39,14 @@
           }
         },
         {
+          "client_id": "238481123693-n8ectnu8tl9hl6vv66tia22bjkb3nhb8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ni.mind.th.ac.sutheast.extsbc",
+            "certificate_hash": "99f1de59cbbb9f0ab27aeb63c596235bc843b92a"
+          }
+        },
+        {
           "client_id": "238481123693-cim0n0al8265hg5ea9qd3dftkkk2gg4k.apps.googleusercontent.com",
           "client_type": 3
         }

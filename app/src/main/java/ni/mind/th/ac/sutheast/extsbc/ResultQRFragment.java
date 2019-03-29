@@ -115,6 +115,8 @@ public class ResultQRFragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_result_qr, container, false);
     }
+
+
     private void SubmitController() {
         Button button = getView().findViewById(R.id.btnsubmit);
         button.setOnClickListener(new View.OnClickListener() {
